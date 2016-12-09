@@ -1,0 +1,38 @@
+﻿@model LearningTool.ViewModels.TestDetailsViewModel
+@{
+    ViewBag.Title = "Details";
+}
+<h2>Details</h2>
+<div>
+    <h4>Subject : @Html.DisplayFor(model => model.TestSubject)</h4>
+    <h6></h6>
+    <p>
+        @Html.ActionLink("Start test", "TestMode", new { id = Model.TestId })|
+        @Html.ActionLink("Add Question", "AddQuestion", new { id = Model.TestId })|
+        @Html.ActionLink("Edit subject", "EditTestSubject", new { id = Model.TestId })|
+        @Html.ActionLink("Delete Test", "DeleteTest", new { id = Model.TestId })
+    </p>
+    <table class="table">
+        @foreach (var item in Model.Questions)
+        {
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(modelItem => item.Question):</b>
+                    @Html.DisplayFor(modelItem => item.Question) <br />
+                    <b>@Html.DisplayNameFor(modelItem => item.Answer):</b>
+                    @Html.DisplayFor(modelItem => item.Answer)<br />
+                    <b>@Html.DisplayNameFor(modelItem => item.Hint):</b>
+                    @Html.DisplayFor(modelItem => item.Hint)<br />
+                    <b>@Html.DisplayNameFor(modelItem => item.Mnemonic):</b>
+                    @Html.DisplayFor(modelItem => item.Mnemonic)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "EditQuestion", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "DeleteQuestion", new { id = item.Id })
+                </td>
+            </tr>
+        }
+    </table>
+    <p>
+            @Html.ActionLink("Test List", "Index", "Home")
+    </p>

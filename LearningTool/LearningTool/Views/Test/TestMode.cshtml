@@ -1,0 +1,48 @@
+﻿@model LearningTool.ViewModels.TestDetailsViewModel
+@{
+    ViewBag.Title = "Testmode";
+}
+<h2>Testmode</h2>
+<div>
+    <h4>Subject : @Html.DisplayFor(model => model.TestSubject)</h4>
+    @Html.ActionLink("Test Details", "Details", "Test", new { id = Model.TestId }, htmlAttributes: null)
+    <hr />
+    <div class='row'>
+        <div class='col-md-12'>
+            <div class="carousel slide" id="test" data-interval="false">
+                <div class="carousel-inner">
+                    @{
+                        var list = Model.Questions;
+                        var activeSet = true;
+
+                        foreach (var item in list)
+                        {
+                            var active = activeSet == true ? "active" : "";
+
+                            <div class="item @active">
+                                @Html.DisplayFor(modelItem => item.Question) 
+                            </div>
+
+                            if (!item.Hint.IsEmpty())
+                            {
+                                <div class="item">
+                                    <b>@Html.DisplayNameFor(modelItem => item.Hint):</b><br />
+                                    @Html.DisplayFor(modelItem => item.Hint)
+                                </div>
+
+                            }
+                            <div class="item">
+                                <b>@Html.DisplayNameFor(modelItem => item.Answer):</b><br />
+                                @Html.DisplayFor(modelItem => item.Answer)
+                            </div>
+
+                            activeSet = false;
+                        }
+                    }
+                </div>
+                <a data-slide="prev" href="#test" class="left carousel-control">‹</a>
+                <a data-slide="next" href="#test" class="right carousel-control">›</a>
+            </div>
+        </div>
+    </div>
+</div>

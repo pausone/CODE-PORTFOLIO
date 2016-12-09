@@ -1,1 +1,1 @@
-Folder containing my personal projects
+Folder containing my projects

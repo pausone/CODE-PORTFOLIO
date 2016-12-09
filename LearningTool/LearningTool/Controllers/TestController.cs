@@ -285,8 +285,6 @@ namespace LearningTool.Controllers
 
             Test test = _context.Tests.Find(id);
             _context.Tests.Remove(test);
-            //FIXA!!
-            //QuestionAndAnswer QnA = _context.QuestionAndAnswers.Find(id);
 
             var QuestionsList = new List<QuestionAndAnswer>();
 

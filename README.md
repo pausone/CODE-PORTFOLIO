@@ -1,1 +1,1 @@
-![Image login](LearningTool/screenshots/login.png)
+![Image login](/screenshots/login.png)

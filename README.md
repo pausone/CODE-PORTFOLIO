@@ -14,10 +14,10 @@ Create a new test.
 View test details including questions. Here you can start your test, edit subject, add questions, delete test, edit questions and delete questions.
 ![Image login](/screenshots/details.png)
 
-Test yourself. Klick right arrow to se hint if exists, otherwise see answer (see next slide). 
+Test yourself. Klick right arrow to se hint if one exists, otherwise see answer (see next slide). 
 ![Image login](/screenshots/question.png)
 
-Then klick right arrow to see next question.
+See answer. Then klick right arrow to see next question.
 ![Image login](/screenshots/answer.png)
 
 Add a new question/answer to your test with optional hint and mnemonic.

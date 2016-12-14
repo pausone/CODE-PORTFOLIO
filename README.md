@@ -3,7 +3,7 @@ About LearningTool
 This project is a tool used for studying for a test. The site is inpired by the real life strategy of 
 writing a question on a card and the answer on the back and doing so for all things you want to learn. You only have one question in front of you at the time to help you focus.
 
-Log in or register as a new user.
+Log in or register as a new user (authentication to be added for real use).
 ![Image login](/screenshots/login.png)
 
 View your tests (on Start page and via dropdown menu). Add a test via menu.

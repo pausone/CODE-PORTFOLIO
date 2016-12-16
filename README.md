@@ -6,38 +6,38 @@ This website has been made using C#.NET, MVC, Entity Framework and Bootstrap.
 
 ###Screenshots using Chrome
 
-Log in or register as a new user (authentication to be added for real use).
 ![Image login](/screenshots/login.png)
+Log in or register as a new user (authentication to be added for real use).
 
-View your tests (on Start page and via dropdown menu). Add a test via menu.
 ![Image login](/screenshots/index.png)
+View your tests (on Start page and via dropdown menu). Add a test via menu.
 
-Create a new test.
 ![Image login](/screenshots/cretetest.png)
+Create a new test.
 
-View test details including questions. Here you can start your test, edit subject, add questions, delete test, edit questions and delete questions.
 ![Image login](/screenshots/details.png)
+View test details including questions. Here you can start your test, edit subject, add questions, delete test, edit questions and delete questions.
 
-Test yourself. Klick right arrow to se hint if one exists, otherwise see answer (see next slide). 
 ![Image login](/screenshots/question.png)
+Test yourself. Klick right arrow to se hint if one exists, otherwise see answer (see next slide).
 
-See answer. Then klick right arrow to see next question.
 ![Image login](/screenshots/answer.png)
+See answer. Then klick right arrow to see next question.
 
-Add a new question/answer to your test with optional hint and mnemonic.
 ![Image login](/screenshots/addqna.png)
+Add a new question/answer to your test with optional hint and mnemonic.
 
-Edit a question.
 ![Image login](/screenshots/editq.png)
+Edit a question.
 
-Delete a question.
 ![Image login](/screenshots/deleteq.png)
+Delete a question.
 
-Edit test subject.
 ![Image login](/screenshots/edittest.png)
+Edit test subject.
 
-Delete a test.
 ![Image login](/screenshots/deletetest.png)
+Delete a test.
 
 
 
